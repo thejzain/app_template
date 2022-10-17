@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'post.dart';
+import 'map.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -56,10 +56,7 @@ class _HomePageState extends State<HomePage> {
         style: TextStyle(fontSize: 20),
       ),
     ),
-    Icon(
-      Icons.location_on,
-      size: 150,
-    )
+    mapPage()
   ];
 
   void _onitemTapped(int index) {
